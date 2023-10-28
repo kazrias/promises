@@ -2766,7 +2766,8 @@ function squarePromise(promise) {
   }, () => Promise.reject('Something went wrong with input promise!'))
 }
 
-squarePromise(Promise.reject('Error')).catch(res => console.log(res))
-squarePromise(Promise.resolve('5')).then(res => console.log(res))
-squarePromise(Promise.resolve('aa')).catch(res => console.log(res))
-squarePromise(Promise.resolve(5)).then(res => console.log(res))
+// reminder - resolve/reject are async, thats why results are 25,25, err, err
+// squarePromise(Promise.reject('Error')).catch(res => console,.log(res))
+// squarePromise(Promise.resolve('5')).then(res => console.log(res))
+// squarePromise(Promise.resolve('aa')).catch(res => console.log(res))
+// squarePromise(Promise.resolve(5)).then(res => console.log(res))
