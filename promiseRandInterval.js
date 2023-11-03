@@ -1204,7 +1204,7 @@ let users = [
 function randInterval(users) {
   return new Promise((resolve, reject) => {
     console.log('Loading')
-    const interval = Math.floor(Math.random() * 501 + 500);
+    const interval = Math.floor(Math.random() * 500 + 500);
     setTimeout(() => {
       console.log(`Fetch started after ${interval}`);
       resolve(users)
